@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend/etc/menu.xsd">
+    <menu>
+        <add id="Dotsquares_ProductSlider::productslider" title="Dotsquares ProductSlider" module="Dotsquares_ProductSlider" sortOrder="440" 
+		parent="Magento_Backend::content" resource="Dotsquares_ProductSlider::productslider"/>
+        <add id="Dotsquares_ProductSlider::manage_sliders" title="Product sliders" module="Dotsquares_ProductSlider" sortOrder="10" 
+		parent="Dotsquares_ProductSlider::productslider" action="productslider/slider/index" resource="Dotsquares_ProductSlider::manage_sliders"/>
+    </menu>
+</config>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config/etc/system.xsd">
+    <system>
+        <tab id="dotsquares" translate="label" sortOrder="0">
+            <label>Dotsquares</label>
+        </tab>          
+        <section id="dotsquares_productslider" translate="label" type="text" sortOrder="440" showInWebsite="1" showInStore="1" showInDefault="1">
+            <class>separator-top</class>
+            <label>Product Slider</label>
+            <tab>dotsquares</tab>
+            <resource>Dotsquares_ProductSlider::config_productslider</resource>      
+            <group id="general" translate="label" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1">
+                <label>General</label>
+               <field id="enable_productslider" translate="label comment" type="select" sortOrder="20" showInWebsite="1" showInStore="1" showInDefault="1">
+                    <label>Enable</label>
+                    <comment>If Yes, the extension will be enabled on the frontend</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field> 
+            </group>
+        </section>
+    </system>
+</config>

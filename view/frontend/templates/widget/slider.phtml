@@ -1,0 +1,9 @@
+<?php
+
+?>
+
+<div class="ds-productslider-widget widget-block-prodslider">
+    <?php $sliderId = $block->getData('slider');  ?>
+    <?=  $block->getLayout()->createBlock(\Dotsquares\ProductSlider\Block\Slider\Items::class)
+        ->setSliderId($sliderId)->toHtml(); ?>
+</div>
